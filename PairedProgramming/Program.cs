@@ -24,14 +24,18 @@ namespace PairedProgramming
 
             } while (continueStudent != "N");
 
-            int studentCount = students.Count;
+            ArrayList groups = new ArrayList();
 
-            if (studentCount % 2 == 0)
-            {
-                Console.WriteLine(student1);
-            }
+            for (int i = 0; i < students.Count; i++)
+			{
+                if (students.Count % 2 == 0)
+	                {
+                        
+	                }
+                Console.WriteLine(students[i]);
+			}
 
-
+            Console.ReadKey();
         }
     }
 }
